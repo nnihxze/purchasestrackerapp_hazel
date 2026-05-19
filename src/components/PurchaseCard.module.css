@@ -1,0 +1,85 @@
+.card {
+  background: var(--card);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.15s;
+}
+
+.card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+
+.top    { display: flex; align-items: flex-start; gap: 12px; }
+
+.icon {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.body   { flex: 1; min-width: 0; }
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-weight: 600;
+  border: none;
+  transition: opacity 0.15s;
+  font-family: var(--font);
+  white-space: nowrap;
+}
+
+.statusPill:hover { opacity: 0.75; }
+
+.pillArrived { background: var(--success-bg); color: var(--success-text); }
+.pillPending { background: var(--warn-bg);    color: var(--warn-text); }
+
+.date  { font-size: 12px; color: var(--text-muted); margin-top: 3px; }
+
+.price { font-weight: 700; font-size: 15px; text-align: right; flex-shrink: 0; font-family: var(--font-mono); }
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.btnSm {
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-family: var(--font);
+  border: 1px solid;
+  transition: opacity 0.15s;
+}
+
+.btnSm:hover { opacity: 0.75; }
+
+.btnEdit { background: var(--info-bg);   color: var(--info-text);   border-color: var(--info-border); }
+.btnDel  { background: var(--danger-bg); color: var(--danger-text); border-color: var(--danger-border); }

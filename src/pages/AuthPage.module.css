@@ -1,0 +1,110 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--hbg);
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius-xl);
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  background: var(--accent);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.title    { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+.subtitle { font-size: 14px; color: var(--text-sec); margin-bottom: 28px; }
+
+.tabs {
+  display: flex;
+  background: var(--app-bg);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  margin-bottom: 24px;
+  gap: 4px;
+}
+
+.tab {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-sec);
+  transition: all 0.15s;
+}
+
+.tabActive {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.fieldGroup  { margin-bottom: 16px; }
+
+.fieldLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-sec);
+  margin-bottom: 7px;
+}
+
+.fieldInput {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #ddd;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--card);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.fieldInput:focus { border-color: var(--accent); }
+.fieldError       { border-color: #E24B4A !important; }
+.fieldErrMsg      { font-size: 12px; color: var(--danger-text); margin-top: 5px; }
+
+.btnPrimary {
+  width: 100%;
+  padding: 13px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s, transform 0.1s;
+  margin-top: 4px;
+}
+
+.btnPrimary:hover  { background: var(--accent-hover); }
+.btnPrimary:active { transform: scale(0.98); }
+
+.switchText { text-align: center; margin-top: 16px; font-size: 13px; color: var(--text-muted); }
+.switchLink { color: var(--accent); cursor: pointer; font-weight: 500; }
+
+.alertError   { background: var(--danger-bg);  color: var(--danger-text);  border: 1px solid var(--danger-border);  padding: 10px 14px; border-radius: var(--radius-sm); font-size: 13px; margin-bottom: 16px; }
+.alertSuccess { background: var(--success-bg); color: var(--success-text); border: 1px solid #9FE1CB; padding: 14px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; text-align: center; }
+
+@media (max-width: 440px) {
+  .card { padding: 28px 20px; }
+}
