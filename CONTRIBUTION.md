@@ -8,7 +8,9 @@
 - Managed the GitHub repository and version control
 
 ## Dan Alain Jay Tatel
-- 
+- Tested the system for bugs and errors 
+- Verified Firebase Authentication and Firestore data storage functionality
+- Worked on project documentation and README
 
 ## Johnny Pereyra
 - 
