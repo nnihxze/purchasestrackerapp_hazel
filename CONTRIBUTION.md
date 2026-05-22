@@ -1,9 +1,9 @@
 # Project Contributions
 
 ## Hazel Soliveres
-- Developed the frontend UI (AuthPage, DashboardPage, PurchaseCard, PurchaseModal)
+- Developed the frontend UI 
 - Connected and configured Firebase Authentication and Firestore database
-- Developed backend functions (login, register, logout, CRUD operations for purchases)
+- Developed backend functions
 - Deployed the application to Firebase Hosting
 - Managed the GitHub repository and version control
 
